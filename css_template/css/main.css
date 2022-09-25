@@ -30,34 +30,83 @@ body, .wrap {
 
 /* header style */
 header {
-    background: tomato;
-}
+    /* background: tomato; */
+    background: rgba(0,0,0, 0.2);
+    height: 100px;
+    line-height: 100px;
 
+    /* w100%가 깨짐 */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 header .inner-header {
-    background: greenyellow;
+    /* background: greenyellow; */
     width: 84%;
     margin: 0 auto;
 }
-
 header .inner-header .logo {
-    background: skyblue;
+    /* background: skyblue; */
     float: left;
     width: 200px;
 }
-
 header .inner-header .logo img {
     width: 100%;
 }
 
 header .inner-header .gnb {
-    background: gray;
+    /* background: violet; */
     float: left;
     margin-left: 80px;
 }
-
 header .inner-header nav li {
-    float : left;
+    float: left;
 }
+
+header .inner-header nav li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+header .inner-header .gnb li a:hover {
+    color: #ff8342;
+}
+
+header .inner-header .gnb li {
+    margin-right: 80px;
+}
+
+
 header .inner-header .tnb {
-    background: orangered;
+    /* background: orangered; */
+    float: right;
+}
+
+header .inner-header .tnb li {
+    margin-right: 25px;
+}
+header .inner-header .tnb li a {
+    text-align: center;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+header .inner-header .tnb li:last-child i {
+    margin-left: 5px;
+}
+header .inner-header .tnb li:last-child a {
+    display: block;
+    width: 105px;
+    line-height: 2;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 33px;
+}
+header .inner-header .tnb li:last-child a:hover{
+    background: #fff;
+    color: #ff8342;
 }
