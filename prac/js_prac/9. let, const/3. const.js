@@ -4,6 +4,10 @@ const SALE_RATE = 0.2; //할인율 20%
 
 const PI = 3.14159265; //원주율
 
+PI = 123123;
+
+console.log(PI);
+
 // sale_rate = 0.3;
 
 console.log(`sale_rate : ${SALE_RATE}`);
